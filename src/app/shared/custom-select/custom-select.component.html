@@ -1,0 +1,6 @@
+<div class="dropdown" [ngClass]="{'active': showDropDown}" (click)="toggle()">
+  <input class="text-box" [(ngModel)]="selectedValue" type="text" [placeholder]="placeHolder" readonly>
+  <div class="options">
+    <div *ngFor="let item of data" (click)="setValue(item)">{{item.label}}</div>
+  </div>
+</div>

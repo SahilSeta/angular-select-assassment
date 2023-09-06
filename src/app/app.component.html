@@ -1,0 +1,4 @@
+<div class="root">
+  <div *ngIf="selectedValue" class="value-result">Selected Value : {{selectedValue?.label}}</div>
+  <app-custom-select [placeHolder]="placeHolder" [data]="selectionData" (selectionChanged)="selectedValue = $event"></app-custom-select>
+</div>
